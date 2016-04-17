@@ -19,7 +19,7 @@ power$Sub_metering_3 <- as.numeric(power$Sub_metering_3)
 power$Voltage <- as.numeric(power$Voltage)
 
 # Plot histogram
-hist(power$Global_active_power, col="red")
+hist(power$Global_active_power, col="red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)" )
 
 # Output to PNG file
 dev.copy(png, filename = "plot1.png", width = 480, height = 480, units = "px")
